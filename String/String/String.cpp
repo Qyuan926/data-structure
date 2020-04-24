@@ -5,7 +5,10 @@
 #include<string.h>
 using namespace std;
 #include<string>
+<<<<<<< HEAD
 #include<algorithm>
+=======
+>>>>>>> 82b2ec797aa7a120c2f3b00a022552e7c1880ea3
 namespace MyString
 {
 	class String{
@@ -446,6 +449,7 @@ void  CmpTest()
 
 
 }
+<<<<<<< HEAD
 namespace MyStringNew{
 	class String{
 	public:
@@ -476,17 +480,24 @@ namespace MyStringNew{
 		char* _str;
 	};
 }
+=======
+>>>>>>> 82b2ec797aa7a120c2f3b00a022552e7c1880ea3
 
 int main()
 {
 	//InsertTest();
 	//FindTest();
 	//CmpTest();
+<<<<<<< HEAD
 	MyStringNew::String  s1("abbacccdcc");
 
 	MyStringNew::String  s2(s1);
 	MyStringNew::String s3("ss");
 	s3 = s1;
 	
+=======
+	MyString::String  s1("abbacccdcc");
+	printf("%s", s1.c_str());
+>>>>>>> 82b2ec797aa7a120c2f3b00a022552e7c1880ea3
 	return 0;
 }
