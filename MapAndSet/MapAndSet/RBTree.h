@@ -10,26 +10,7 @@ enum Color{
 	Black,
 };
 
-//template <class T>
-//struct TreeNode
-//{
-//
-//
-//	TreeNode<T>* _left;
-//	TreeNode<T>* _right;
-//	TreeNode<T>* _parent;
-//
-//	T  _data;
-//	Color   _color;
-//
-//	TreeNode(const T& data)
-//		:_left(nullptr),
-//		_right(nullptr),
-//		_parent(nullptr),
-//		_data(data),
-//		_color = Red
-//	{}
-//};
+
 template<class T>
 struct TreeNode
 {
@@ -109,8 +90,8 @@ struct __TreeIterator{
 		  Node* parent = cur->_parent;
 		  while (parent != nullptr&&parent->_left == cur)
 		  {
-			/*  cur = parent;
-			  parent = cur->_parent;*/
+			  cur = parent;
+			  parent = cur->_parent;
 		  }
 
 		  _node = parent;
@@ -128,6 +109,8 @@ struct __TreeIterator{
 
 
 };
+
+
 
 template <class K,class T,class KofValue>
 class RBTree{
