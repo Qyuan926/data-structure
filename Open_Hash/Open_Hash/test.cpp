@@ -43,27 +43,13 @@ void test_set()
 	}
 }
 
-void test_set1()
-{
-	std::unordered_set<std::string > us;
-	us.insert("书生");
-	us.insert("Qyuan");
-	us.insert("嘻嘻");
-	us.insert("哈哈");
-	std::unordered_set<std::string>::iterator it = us.begin();
-	while (it != us.end())
-	{
-		std::cout << *it << std::endl;
-		++it;
-	}
-}
+
 
 int main()
 {
-	//test_hashmap();
+	test_hashmap();
 	std::cout << "自我实现" << std::endl;
 	test_set();
-	std::cout << "系统实现" << std::endl;
-	test_set1();
+	
 	return 0;
 }

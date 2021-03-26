@@ -14,7 +14,7 @@ namespace HashSet{
 	template <class K, class Ha = Hash::_hash<K>>
 	class unordered_set{
 	public:
-		typedef typename Hash::hash_iterator<K, K, SetKeyofT<K>, Ha>  iterator;
+		typedef   typename Hash::hash_iterator<K, K, SetKeyofT<K>, Ha>  iterator;
 		iterator begin()
 		{
 			return _table.begin();

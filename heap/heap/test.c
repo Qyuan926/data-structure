@@ -3,16 +3,17 @@
 
 void Testheap()
 {
-	int a[10] = { 27, 15, 19, 18, 28, 34, 65, 49, 25, 37 };
+	int a[10] = { 27 };
 	Heap hp;
-	HeapCreate(&hp, a, 10);
+	HeapCreate(&hp, a, 1);
 	//HeapPrint(&hp);
 
 	//HeapPop(&hp);
 	HeapPush(&hp, -1);
-	
-	HeapPrint(&hp);
+	HeapPush(&hp, -3);
+	HeapPush(&hp, 5);
 	HeapPush(&hp, 90);
+	//HeapPush(&hp, -100);
 	HeapPrint(&hp);
 
 	//printf("%d \n", HeapTop(&hp));

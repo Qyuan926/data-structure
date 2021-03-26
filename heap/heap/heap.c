@@ -19,7 +19,7 @@ void ADJustDown(HPDataType* a, int n, int root)
 {
 	int parent = root;
 	int child = 2 * parent + 1;
-	while (child <=n)
+	while (child <n)
 	{
 		if (child+1<n&&a[child + 1] < a[child])
 		{
